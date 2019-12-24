@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'fzyt';
+ src:url(fonts/方正姚体.TTF);
+}
+@font-face {
+	font-family: 'ysjt';
+ src : url(fonts/方正颜宋简体-中.TTF);
+}
+		
+p{
+	line-height: 40px;
+}
+		body{
+			background-color: #F2F2F1;
+		}
+#scene1,#scene2,#scene3 ,#scene4{
+	display: none;
+	width: 600px;
+	height: 200px;
+	background: #e3d9ca;
+	border:solid,#FAF5F5,5px;
+	position: absolute;
+	top: 300px;
+	left: 30%;
+	z-index: 9999;
+}
+
+#scene1 p,#scene2 p,#scene3 p,#scene4 p{
+	margin:30px;
+	color: #6f6866;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+
+
+#scene1.visiblestart,#scene2.visiblestart,#scene3.visiblestart,#scene4.visiblestart{
+	display: block;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: sall 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+#scene1.visible,#scene2.visible,#scene3.visible,#scene4.visible {
+	opacity: 1;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+svg rect:hover {
+	fill: #000000 !important;
+}
+.detail {
+	height: 280px;
+	width: 676.4px;
+ 	background-image:url('../images/文字背景.png');
+	background-size: cover;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 40px;
+}
+
+.detail1 {
+	height: 210px;
+	width: 668px;
+ 	background-image:url('../images/文字背景.png');
+	background-size: cover;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 40px;
+}
+
+.detail>p, .detail1>p{
+	font-size: 14px;
+	font-family: ysjt;
+	color: #6f6866;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 25px;
+}
+.detail>p.jibing .detail1>p.jibing{
+	font-size: 16px;
+	color: #654647
+}
+.back {
+	height: 1000px;
+	background-color: aqua;
+}
+.col-center {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.zhengzhuang {
+/*	position: absolute;*/
+	
+	z-index: 999;
+	height: 900px;
+}
+.zhiliao {
+/*	position: absolute;*/
+	
+	z-index: 999;
+	height: 900px;
+}
+.xinli {
+/*	position: absolute;*/
+
+	z-index: 999;
+	height: 900px;
+}
+
+.qidai {
+/*	position: absolute;*/
+
+	z-index: 999;
+	height: 500px;
+}
+
+.ronghe {
+/*	position: absolute;*/
+	
+	z-index: 999;
+	height: 900px;
+}
+.allanswer {
+	/*		position:absolute;*/
+	
+	z-index: 999;
+	height: 900px;
+}
+
+.jibing5 {
+	z-index: 999;
+}
+
+#zhiliaosvg rect.active {
+	fill: #e8a33f;
+}
+.answerall rect {
+	display: none
+}
+.notshow {
+	display: none;
+}
+.allpangbai {
+	height: 300px;
+	width: 800px;
+	padding-top: 150px;
+	font-weight: 800;
+	font-size: 20px;
+	font-family:"ysjt";
+	color: #372D2E;
+	
+}
+		
+		
+#allsvg rect.invisible2{
+	opacity: 0;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+		
+	#allsvg rect{
+			opacity: 1;
+
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: sall 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+		}
+
+.fengmian{
+	width: auto;
+	height: 2000px;
+	background-image: url("../images/WechatIMG3659.png");
+	background-size: cover;
+}
+
+.qianyan{
+	width: auto;
+	height: 5700px;
+	background-color:#000000;
+}
+
+
+.invisible{
+	display: none;
+}
+
+video {
+	position: absolute;
+	top:40px;
+	right: 0px;
+	
+}
+
+.square2.invisible{
+	display: none;
+}
+
+
+.biaoti {
+	
+	height: 300px;
+/*
+	background-image: url("../images/1.难以界定的罕见病.png");
+	background-size: cover;
+*/
+	padding-bottom: 100px;
+}
+
+.row{
+	margin-bottom: 60px;
+}
+
+
+#ditu1{
+/*	margin-left: 10%;*/
+	z-index: 999;
+	height: 900px;
+}
+
+#tulisvg{
+	width: 200px;
+	height: 400px;
+	position: absolute;
+	left: 250px;
+	top:200px;
+	z-index: 9999;
+}
+
+#jutijibing img{
+	position: absolute;
+	width: 1065px;
+	height: 600px;
+	top: 200px;
+	left: 350px;
+}
+
+#tulisvg rect:hover{
+	fill:#e3d9ca !important;
+}
+
+#dianjiditu{
+	z-index: 999;
+	height: 900px;
+}
+
+#container rect:hover{
+	fill:#f2f2f1 !important;
+}
+
+.yibaoyao {
+	margin-left: 30%
+}
+/*
+.xuanze{
+	display: block;
+	position: absolute;
+	background-image: url("../images/WechatIMG3654.png");
+	width:auto;
+	height: 1080px;
+	background-size: cover;
+	z-index: 9999;
+}
+*/
